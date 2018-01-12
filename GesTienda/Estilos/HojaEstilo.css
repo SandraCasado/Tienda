@@ -1,0 +1,96 @@
+﻿body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: small;
+    background-color: #FFFFFF;
+    color:#000000;
+}
+
+#cabecera {
+    width: 100%;
+}
+
+#cabecera1{
+    width: 100%;
+    background-color: #000000;
+    text-align: right;
+    color: #FFFFFF;
+}
+    
+#cabecera2 {
+    width: 100%;
+    background-color: #006699;
+    color: #FFFFFF;
+    font-size: large;
+    font-weight: bold;
+    height: 300px;
+}
+#blackline{
+    width: 100%;
+    background-color: #000000;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+#cabecera3
+{
+    width: 100%;
+    text-align: right;
+}
+
+#cuerpo {
+   
+}
+
+#cuerpoinicio {
+    width: 100%;
+}
+
+#menu, #contenido {
+    float: left;
+    display: inline;
+}
+
+#cuerpofin {
+    clear: both;
+    width: 100%;
+}
+   
+#menu
+{
+    width:auto;
+    padding: 0px;
+    border-style: groove;
+    border-width: thin;
+}
+
+#contenido {
+    width: 80%;
+    padding: 20px;
+}
+
+#contenidotitulo
+{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#pie {
+    width: 100%;
+    text-align: center;
+}
+#grdProductos{
+    display:block;
+    float:left;
+    margin-bottom:100px;
+    margin-right: 10px;
+}
+#Login1{
+    width: 350px; 
+    margin: 0 auto; 
+   
+}
+#FormularioRe
+{
+    width: 300px;
+    margin: 0 auto;
+}

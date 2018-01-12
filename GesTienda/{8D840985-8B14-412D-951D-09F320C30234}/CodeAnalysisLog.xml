@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\Sandra\AppData\Local\Temp\tmpCEA3.tmp.cadir\bin\App_Web_1tk2ykgn.dll">
+   <Modules>
+    <Module Name="app_web_1tk2ykgn.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="_Default" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Login1_Authenticate(System.Object,System.Web.UI.WebControls.AuthenticateEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-01-12 20:52:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Sandra\Desktop\fp\3ºaño\entorno servidor\tema6\practicaMejorada\Tienda\GesTienda" File="Default.aspx.cs" Line="27">La cadena de consulta pasada a 'SqlCommand.SqlCommand(string, SqlConnection)' en '_Default.Login1_Authenticate(object, AuthenticateEventArgs)' podría contener las siguientes variables: 'this.Login1.UserName', 'this.Login1.Password'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Sandra\AppData\Local\Temp\tmpCEA3.tmp.cadir\bin\App_Web_5vr3fnn2.dll">
+   <Modules>
+    <Module Name="app_web_5vr3fnn2.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="_Default" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#grdClientes_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-01-12 20:52:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Sandra\Desktop\fp\3ºaño\entorno servidor\tema6\practicaMejorada\Tienda\GesTienda" File="PedidosPorCliente.aspx.cs" Line="43">La cadena de consulta pasada a 'SqlCommand.SqlCommand(string, SqlConnection)' en '_Default.grdClientes_SelectedIndexChanged(object, EventArgs)' podría contener las siguientes variables: 'strClienteSeleccionado'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Sandra\Desktop\fp\3ºaño\entorno servidor\tema6\practicaMejorada\Tienda\GesTienda" File="PedidosPorCliente.aspx.cs" Line="88">La cadena de consulta pasada a 'SqlCommand.SqlCommand(string, SqlConnection)' en '_Default.grdClientes_SelectedIndexChanged(object, EventArgs)' podría contener las siguientes variables: 'strClienteSeleccionado'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Sandra\AppData\Local\Temp\tmpCEA3.tmp.cadir\bin\App_Web_a5tsyyrt.dll">
+   <Modules>
+    <Module Name="app_web_a5tsyyrt.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="_Default" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-01-12 20:52:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Sandra\Desktop\fp\3ºaño\entorno servidor\tema6\practicaMejorada\Tienda\GesTienda" File="MenuAdmin.aspx.cs" Line="32">La cadena de consulta pasada a 'SqlCommand.SqlCommand(string, SqlConnection)' en '_Default.Page_Load(object, EventArgs)' podría contener las siguientes variables: 'Convert.ToString(this.Session["Rol"])'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Sandra\AppData\Local\Temp\tmpCEA3.tmp.cadir\bin\App_Web_bvyuccoq.dll">
+   <Modules>
+    <Module Name="app_web_bvyuccoq.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="_Default" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnInsertar_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-01-12 20:52:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Sandra\Desktop\fp\3ºaño\entorno servidor\tema6\practicaMejorada\Tienda\GesTienda" File="Registrarse.aspx.cs" Line="55">La cadena de consulta pasada a 'SqlCommand.CommandText.set(string)' en '_Default.btnInsertar_Click(object, EventArgs)' podría contener las siguientes variables: 'this.txtIdCliente.Text', 'this.txtNomCli.Text', 'this.txtDirCli.Text', 'this.txtPobCli.Text', 'this.txtCpoCli.Text', 'this.txtTelCli.Text', 'this.txtCorCli.Text', 'this.txtLogin.Text'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Sandra\Desktop\fp\3ºaño\entorno servidor\tema6\practicaMejorada\Tienda\GesTienda" File="Registrarse.aspx.cs" Line="53">La cadena de consulta pasada a 'SqlCommand.CommandText.set(string)' en '_Default.btnInsertar_Click(object, EventArgs)' podría contener las siguientes variables: 'this.txtLogin.Text', 'this.txtPassword1.Text', 'this.txtNomCli.Text'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Sandra\AppData\Local\Temp\tmpCEA3.tmp.cadir\bin\App_Web_qtzcvn2b.dll">
+   <Modules>
+    <Module Name="app_web_qtzcvn2b.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="_Default" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnBorrar_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-01-12 20:52:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Sandra\Desktop\fp\3ºaño\entorno servidor\tema6\practicaMejorada\Tienda\GesTienda" File="ProductosMantener.aspx.cs" Line="293">La cadena de consulta pasada a 'SqlCommand.SqlCommand(string, SqlConnection)' en '_Default.btnBorrar_Click(object, EventArgs)' podría contener las siguientes variables: 'this.txtIdProducto.Text'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnInsertar_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-01-12 20:52:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Sandra\Desktop\fp\3ºaño\entorno servidor\tema6\practicaMejorada\Tienda\GesTienda" File="ProductosMantener.aspx.cs" Line="137">La cadena de consulta pasada a 'SqlCommand.SqlCommand(string, SqlConnection)' en '_Default.btnInsertar_Click(object, EventArgs)' podría contener las siguientes variables: 'this.txtIdProducto.Text', 'this.txtDesPro.Text', 'this.FnComaPorPunto(dcPrecio)', 'strIdUnidad', 'strIdTipo'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnModificar_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-01-12 20:52:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Sandra\Desktop\fp\3ºaño\entorno servidor\tema6\practicaMejorada\Tienda\GesTienda" File="ProductosMantener.aspx.cs" Line="232">La cadena de consulta pasada a 'SqlCommand.SqlCommand(string, SqlConnection)' en '_Default.btnModificar_Click(object, EventArgs)' podría contener las siguientes variables: 'this.txtIdProducto.Text', 'this.txtDesPro.Text', 'dcPrecio', 'strIdUnidad', 'strIdTipo'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#grdProductos_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-01-12 20:52:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Sandra\Desktop\fp\3ºaño\entorno servidor\tema6\practicaMejorada\Tienda\GesTienda" File="ProductosMantener.aspx.cs" Line="36">La cadena de consulta pasada a 'SqlCommand.SqlCommand(string, SqlConnection)' en '_Default.grdProductos_SelectedIndexChanged(object, EventArgs)' podría contener las siguientes variables: 'StrIdProducto'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad</Name>
+   <Description>Una cadena de comando SQL compilada a partir de datos proporcionados por el usuario es vulnerable a ataques pon inyección de código SQL. Microsoft SQL Server y otros servidores de bases de datos admiten procedimientos almacenados y consultas SQL parametrizadas, que reducen el riesgo de ataques por inyección.</Description>
+   <Resolution Name="WithNonLiterals">La cadena de consulta pasada a {0} en {1} podría contener las siguientes variables: {2}. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Categoría</String>
+  <String Key="Certainty">Certeza</String>
+  <String Key="CollapseAll">Contraer todo</String>
+  <String Key="CheckId">Comprobar id.</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">errores</String>
+  <String Key="ExpandAll">Expandir todo</String>
+  <String Key="Help">Ayuda</String>
+  <String Key="Line">Línea</String>
+  <String Key="Messages">mensajes</String>
+  <String Key="LocationNotStoredInPdb">[Ubicación no almacenada en Pdb]</String>
+  <String Key="Project">Proyecto</String>
+  <String Key="Resolution">Resolución</String>
+  <String Key="Rule">Regla</String>
+  <String Key="RuleFile">Archivo de regla</String>
+  <String Key="RuleDescription">Descripción de la regla</String>
+  <String Key="Source">Origen</String>
+  <String Key="Status">Estado</String>
+  <String Key="Target">Círculos concéntricos</String>
+  <String Key="Warning">Advertencia</String>
+  <String Key="Warnings">advertencias</String>
+  <String Key="ReportTitle">Informe de análisis del código</String>
+ </Localized>
+</FxCopReport>
