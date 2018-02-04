@@ -6,6 +6,8 @@
 <head runat="server">
     <title>On-line shop</title>
     <link href="Estilos/HojaEstilo.css" rel="stylesheet" type="text/css" />  
+    <script runat="server">
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -79,6 +81,44 @@
             <br />
            <p>Ver contenido</p>
            <asp:Label ID="lblResultado" runat="server" Text="Label"></asp:Label>
+            
+            <asp:GridView ID="grdProductos" runat="server" AutoGenerateColumns="False" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" DataKeyNames="IdProducto" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="None" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+                <AlternatingRowStyle BackColor="PaleGoldenrod" />
+                <Columns>
+                    <asp:CommandField ShowSelectButton="True" />
+                    <asp:BoundField DataField="IdProducto" HeaderText="IdProducto" ReadOnly="True" SortExpression="IdProducto" />
+                    <asp:BoundField DataField="DesPro" HeaderText="DesPro" SortExpression="DesPro" />
+                    <asp:BoundField DataField="PrePro" HeaderText="PrePro" SortExpression="PrePro" />
+                    <asp:BoundField DataField="IdUnidad" HeaderText="IdUnidad" SortExpression="IdUnidad" />
+                    <asp:BoundField DataField="IdTipo" HeaderText="IdTipo" SortExpression="IdTipo" />
+                 
+                </Columns>
+                <FooterStyle BackColor="Tan" />
+                <HeaderStyle BackColor="Tan" Font-Bold="True" />
+                <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
+                <SelectedRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
+                <SortedAscendingCellStyle BackColor="#FAFAE7" />
+                <SortedAscendingHeaderStyle BackColor="#DAC09E" />
+                <SortedDescendingCellStyle BackColor="#E1DB9C" />
+                <SortedDescendingHeaderStyle BackColor="#C2A47B" />
+            </asp:GridView>
+         <!--  <asp:ImageField DataImageUrlField="Foto" DataImageUrlFormatString="~/Images/{0}" HeaderText="Foto">
+                    </asp:ImageField>-->
+           <br />
+            <asp:Label ID="Label1" runat="server" Text="Introduzca cantidad"></asp:Label>
+           <asp:TextBox ID="txtQuantity" runat="server" MaxLength="2" Width="19px" Visible="true"></asp:TextBox>
+           <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="*" ControlToValidate="txtQuantity" ForeColor="Red" MaximumValue="99" MinimumValue="1"></asp:RangeValidator>
+           <br />
+           <asp:Button ID="btnAdd" runat="server" Text="Añadir al carrito" onClick="AddToCart" Visible="false"/>
+            <br /> 
+
+            <asp:GridView ID="dg" runat="server">
+            </asp:GridView>
+            <br />
+           <asp:Button ID="btnMostrar" runat="server" Text="Ver Carrito" OnClick="btnMostrar_Click" />
+           <asp:Label ID="lblTotal" runat="server" Text="Label"></asp:Label>
+           <br />
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [PRODUCTO]"></asp:SqlDataSource>
            <br />
            <br />
            <asp:Label ID="lblMensajes" runat="server" ForeColor="Red"></asp:Label>
